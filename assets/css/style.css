@@ -410,6 +410,37 @@ h6,
   animation: up-down 2s ease-in-out infinite alternate-reverse both;
 }
 
+#countdown {
+  display: flex;
+  flex-direction: row;
+  justify-content: left;
+  font-size: 30px;
+  font-family: 'Space Mono', monospace;
+  color: black;
+}
+
+.countdown-label {
+  font-size: 20px;
+  margin: 10px;
+}
+
+.countdown-item {
+  /* border-radius: 10px;
+  background-color: black; */
+}
+
+.hero-right {
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+
+  .hero-img {
+    max-height: auto;
+    max-width: 75%;
+    margin-left: 1%;
+  }
+}
+
 @media (max-width: 991px) {
   #hero {
     height: calc(100vh - 72px);
@@ -419,12 +450,12 @@ h6,
     animation: none;
   }
 
-  #hero .hero-img {
-    text-align: center;
+  .hero-img {
+    margin-top: 25%;
   }
 
   #hero .hero-img img {
-    width: 50%;
+    max-width: 50%;
   }
 }
 

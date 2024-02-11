@@ -15,6 +15,9 @@
 
   <!-- Google Fonts -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -78,12 +81,64 @@
           <h1>Aggie Competitive Programming Contest</h1>
           <h2 id="event-description">The perfect event for students to show off and test their problem-solving skills through programming. Snacks, food, and prizes included!</h2>          
           <h3> May 4, 2024 <span style="color: #627062; font-size: 75%;" class="event-time"></span></h3>
+
+          <!-- Countdown -->
+          <div id="countdown">
+            <div class="countdown-item" id="days">0</div>
+            <div class="countdown-label"> Days </div>
+            <div class="countdown-item" id="hours">0</div>
+            <div class="countdown-label"> Hours </div>
+            <div class="countdown-item" id="minutes">0</div>
+            <div class="countdown-label"> Minutes </div>
+            <div class="countdown-item" id="seconds">0</div>
+            <div class="countdown-label"> Seconds </div>
+          </div>
+
+          <script>
+            function countdown() {
+              // Set the date you're counting down to
+              var countDownDate = new Date("May 4, 2024 10:00:00").getTime();
+          
+              // Update the countdown every second
+              var x = setInterval(function() {
+          
+                // Get the current date and time
+                var now = new Date().getTime();
+          
+                // Calculate the time remaining
+                var distance = countDownDate - now;
+          
+                // Calculate days, hours, minutes and seconds
+                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+          
+                // Update the HTML elements with the countdown values
+                document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+                document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+                document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+                document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+          
+                // If the countdown is over, display a message
+                if (distance < 0) {
+                  clearInterval(x);
+                  document.getElementById("countdown").innerHTML = "Countdown is over!";
+                }
+              }, 1000);
+            }
+          
+            // Call the countdown function
+            countdown();
+          </script>
+          <!-- End Countdown -->
+
           <div>
             <div class="btn-get-started scrollto">Coming Soon</div>
           </div>
         </div>
-        <div class="col-lg-6 order-1 order-lg-2 hero-img">
-          <img src="assets/img/main-photo/trophy-with-balloons.webp" class="img-fluid animated" alt="">
+        <div class="hero-right col-lg-6 order-1 order-lg-2">
+          <img src="assets/img/main-photo/trophy-with-balloons.webp" class="img-fluid animated hero-img" alt="">
         </div>
       </div>
     </div>
@@ -97,32 +152,12 @@
       <div class="container">
 
         <div class="">
-          <!-- <div class="col-lg-5 d-flex align-items-center justify-content-center about-img">
-            <img src="assets/img/about-img.svg" class="img-fluid" alt="" data-aos="zoom-in">
-          </div> -->
-          <!-- <div class="col-lg-6 pt-5 pt-lg-0"> -->
             <div class="section-title">
                 <p data-aos="fade-up">Prizes</p>
             </div>
-            <!-- <p data-aos="fade-up" data-aos-delay="100">
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Duis aute irure dolor in reprehenderit
-            </p> -->
             <div class="prizes" data-aos="fade-up" data-aos-delay="100">
                 <div> To Be Announced </div>
             </div>
-            <!-- <div class="row">
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="100">
-                <i class="bx bx-receipt"></i>
-                <h4>Corporis voluptates sit</h4>
-                <p>Consequuntur sunt aut quasi enim aliquam quae harum pariatur laboris nisi ut aliquip</p>
-              </div>
-              <div class="col-md-6" data-aos="fade-up" data-aos-delay="200">
-                <i class="bx bx-cube-alt"></i>
-                <h4>Ullamco laboris nisi</h4>
-                <p>Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt</p>
-              </div>
-            </div>
-          </div> -->
         </div>
 
       </div>
