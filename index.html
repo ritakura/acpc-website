@@ -14,10 +14,9 @@
   <link href="assets/img/ICPC_UCD.png" rel="apple-touch-icon">
 
   <!-- Google Fonts -->
-  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,600,600i,700,700i" rel="stylesheet">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Mono:wght@700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Nabla&family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
 
   <!-- Vendor CSS Files -->
   <link href="assets/vendor/aos/aos.css" rel="stylesheet">
@@ -76,7 +75,7 @@
           </li>
           <!-- past-contests end -->
           <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li class="getstarted scrollto">Coming Soon</li>
+          <li><a class="getstarted scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -90,71 +89,72 @@
     <div class="container">
       <div class="row gy-4">
         <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
-          <h1>Aggie Competitive Programming Contest</h1>
+          <h1 id="event-name">Aggie Competitive Programming Contest</h1>
           <h2 id="event-description">The perfect event for students to show off and test their problem-solving skills through programming. Snacks, food, and prizes included!</h2>          
-          <h3> May 4, 2024 <span style="color: #627062; font-size: 75%;" class="event-time"></span></h3>
-
-          <!-- Countdown -->
-          <div id="countdown">
-            <div class="countdown-group">
-                <div class="countdown-item" id="days">00</div>
-                <div class="countdown-label"> Days </div>
+          <br/>
+          <div class="countdown-wrapper">
+            <h3 class="event-time"> May 4, 2024 <span class="event-time"></span></h3>
+            <div>&emsp;</div>
+            <!-- Countdown -->
+            <div id="countdown">
+              <div class="countdown-group">
+                  <div class="countdown-item" id="days">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="hours">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="minutes">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="seconds">00</div>
+              </div>
             </div>
-            <div class="countdown-group">
-                <div class="countdown-item" id="hours">00</div>
-                <div class="countdown-label"> Hours </div>
-            </div>
-            <div class="countdown-group">
-                <div class="countdown-item" id="minutes">00</div>
-                <div class="countdown-label"> Minutes </div>
-            </div>
-            <div class="countdown-group">
-                <div class="countdown-item" id="seconds">00</div>
-                <div class="countdown-label"> Seconds </div>
-            </div>
+    
+            <script>
+              function countdown() {
+                // Set the date you're counting down to
+                var countDownDate = new Date("May 4, 2024 10:00:00").getTime();
+            
+                // Update the countdown every second
+                var x = setInterval(function() {
+            
+                  // Get the current date and time
+                  var now = new Date().getTime();
+            
+                  // Calculate the time remaining
+                  var distance = countDownDate - now;
+            
+                  // Calculate days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                  // Update the HTML elements with the countdown values
+                  document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+                  document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+                  document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+                  document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+            
+                  // If the countdown is over, display a message
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "Countdown is over!";
+                  }
+                }, 1000);
+              }
+            
+              // Call the countdown function
+              countdown();
+            </script>
+            <!-- End Countdown -->
           </div>
-
-          <script>
-            function countdown() {
-              // Set the date you're counting down to
-              var countDownDate = new Date("May 4, 2024 10:00:00").getTime();
-          
-              // Update the countdown every second
-              var x = setInterval(function() {
-          
-                // Get the current date and time
-                var now = new Date().getTime();
-          
-                // Calculate the time remaining
-                var distance = countDownDate - now;
-          
-                // Calculate days, hours, minutes and seconds
-                var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-          
-                // Update the HTML elements with the countdown values
-                document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-                document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-                document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-                document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
-          
-                // If the countdown is over, display a message
-                if (distance < 0) {
-                  clearInterval(x);
-                  document.getElementById("countdown").innerHTML = "Countdown is over!";
-                }
-              }, 1000);
-            }
-          
-            // Call the countdown function
-            countdown();
-          </script>
-          <!-- End Countdown -->
-
-          <div>
-            <div class="btn-get-started scrollto">Coming Soon</div>
+          <div  class="btn-gs">
+            <div class="btn-get-started scrollto"><a href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></div>
           </div>
         </div>
         <div class="hero-right col-lg-6 order-1 order-lg-2">
@@ -176,7 +176,7 @@
                 <p data-aos="fade-up">Prizes</p>
             </div>
             <div class="prizes" data-aos="fade-up" data-aos-delay="100">
-                <div> To Be Announced </div>
+                <div class="tba"> <span>To Be Announced</span> </div>
             </div>
         </div>
 
@@ -190,14 +190,14 @@
                 <div class="section-title">
                     <p data-aos="fade-up">Rules and Contest Format</p>
                 </div>
-                <ol data-aos="fade-up">
+                <ol class="rules-text" data-aos="fade-up">
                     <li>Have fun!</li>
-					<li>The contest will last 3 hours.</li>
-					<li>Each team will use one laptop.</li>
-					<li>It is allowed to bring any printed material to the contest.</li>
-					<li>The usage of Internet during the contest is allowed.</li>
-					<li>However, messaging/chatting over any device is against the rules.</li>
-					<li>Details on how to submit your solutions will be provided before the contest during a practice session.</li>
+                    <li>The contest will last 3 hours.</li>
+                    <li>Each team will use one laptop.</li>
+                    <li>It is allowed to bring any printed material to the contest.</li>
+                    <li>The usage of Internet during the contest is allowed.</li>
+                    <li>However, messaging/chatting over any device is against the rules.</li>
+                    <li>Details on how to submit your solutions will be provided before the contest during a practice session.</li>
                 </ol>
             </div>
         </div>
@@ -337,7 +337,7 @@ int main() {
         <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
           <div class="swiper-wrapper align-items-center">
               <div class="swiper-slide"><a href="https://www.morganstanley.com/"><img src="assets/img/clients/morgan-stanley.jpg" class="img-fluid" alt=""></a></div>
-              <div class="swiper-slide"><a href="https://www.nsf.gov/"><img src="assets/img/clients/NSF.png" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.nsf.gov/"><img src="assets/img/clients/NSF.webp" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://cs.ucdavis.edu/"><img src="assets/img/clients/ucd-cs.png" class="img-fluid" alt=""></a></div>
             <div class="swiper-slide"><a href="https://codeforces.com/"><img src="assets/img/clients/Codeforces_logo.png" class="img-fluid" alt=""></a></div>
           </div>
@@ -400,7 +400,6 @@ int main() {
                   <!-- <span>Product Manager</span> -->
                 </div>
                 <div class="social">
-					<!--<a href="https://cs.ucdavis.edu/directory/gabriella-sanchez-fuerte">@</i></a> -->
                 </div>
               </div>
             </div>
@@ -427,6 +426,7 @@ int main() {
                   <h4>Jason Feng</h4>
                 </div>
                 <div class="social">
+                    <a href="https://jasonfeng365.github.io/">@</i></a>
                 </div>
               </div>
             </div>
@@ -464,6 +464,46 @@ int main() {
               <div class="member-info">
                 <div class="member-info-content">
                   <h4>Reina Itakura</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+          <!--<div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jack Yiu Lok Xiang</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Ben.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Wen-Horng Sheu</h4>
+                </div>
+                <div class="social">
+                    <!--<a href="https://cs.ucdavis.edu/directory/gabriella-sanchez-fuerte">@</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--<div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Srikkanth Ramachandran</h4>
                 </div>
                 <div class="social">
                 </div>
@@ -577,7 +617,13 @@ int main() {
             <div class="info">
                 <div class="info-left">
                     <div class="address">
-                    <i class="bi bi-geo-alt"></i>
+                    <i class="bi bi-geo-alt loc-btn" onClick="cpy()"></i>
+                    <script>
+                      function cpy() {
+                        navigator.clipboard.writeText("Rm 1020, 482 Hutchison Dr, Davis, CA 95616");
+                        alert("Copied address!");
+                      }
+                    </script>
                     <h4>Location:</h4>
                     <p>Rm 1020, 482 Hutchison Dr, Davis, CA 95616</p>
                     </div>
@@ -651,6 +697,7 @@ int main() {
         &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
         <br><a href='https://pngtree.com/freepng/gold-medal-golden-medal-red-ribbon-clip-art_6000905.html'>Gold png from pngtree.com/</a>
         <br/><a href="https://www.kindpng.com">Balloons from kindpng.com</a>
+        <br><a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Background by John Fowler</a>
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
