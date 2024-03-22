@@ -1,0 +1,743 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>ACPC</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/ICPC_UCD.png" rel="icon">
+  <link href="assets/img/ICPC_UCD.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Nabla&family=Open+Sans:wght@500;800&display=swap" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+  
+  <!-- Styles for code -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Ninestars
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>ACPC</span></a></h1>
+        <!-- Uncomment below if you prefer to use an image logo -->
+        <!-- <a href="index.html"><img src="assets/img/ICPC_UCD.png" alt="" class="img-fluid"></a> -->
+      </div>
+
+      <nav id="navbar" class="navbar">
+        <ul>
+          <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
+          <li><a class="nav-link scrollto" href="#about">Prizes</a></li>
+          <li><a class="nav-link scrollto" href="#rules">Rules</a></li> 
+          <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
+          <li><a class="nav-link scrollto" href="#clients">Partners</a></li>
+          <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <!-- past-contests -->
+          <li class = "dropdown">
+              <a href="#">
+                <span>Past Contests</span>
+              <i class = "bi bi-chevron-down"></i>
+            </a>
+            <ul>
+              <li>
+                <a href="https://acpc-ucd.com/2023">2023</a>
+              </li>
+            </ul>
+          </li>
+          <!-- past-contests end -->
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
+          <li><a class="getstarted scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></li>
+        </ul>
+        <i class="bi bi-list mobile-nav-toggle"></i>
+      </nav><!-- .navbar -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex align-items-center">
+
+    <div class="container">
+      <div class="row gy-4">
+        <div class="col-lg-6 order-2 order-lg-1 d-flex flex-column justify-content-center">
+          <h1 id="event-name">Aggie Competitive Programming Contest</h1>
+          <h2 id="event-description">The perfect event for students to show off and test their problem-solving skills through programming. Snacks, food, and prizes included!</h2>          
+          <br/>
+          <div class="countdown-wrapper">
+            <h3 class="event-time"> May 4, 2024 <span class="event-time"></span></h3>
+            <div>&emsp;</div>
+            <!-- Countdown -->
+            <div id="countdown">
+              <div class="countdown-group">
+                  <div class="countdown-item" id="days">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="hours">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="minutes">00</div>
+                  <div class="countdown-item"> : </div>
+              </div>
+              <div class="countdown-group">
+                  <div class="countdown-item" id="seconds">00</div>
+              </div>
+            </div>
+    
+            <script>
+              function countdown() {
+                // Set the date you're counting down to
+                var countDownDate = new Date("May 4, 2024 10:00:00").getTime();
+            
+                // Update the countdown every second
+                var x = setInterval(function() {
+            
+                  // Get the current date and time
+                  var now = new Date().getTime();
+            
+                  // Calculate the time remaining
+                  var distance = countDownDate - now;
+            
+                  // Calculate days, hours, minutes and seconds
+                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+            
+                  // Update the HTML elements with the countdown values
+                  document.getElementById("days").innerHTML = String(days).padStart(2, "0");
+                  document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
+                  document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
+                  document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
+            
+                  // If the countdown is over, display a message
+                  if (distance < 0) {
+                    clearInterval(x);
+                    document.getElementById("countdown").innerHTML = "Countdown is over!";
+                  }
+                }, 1000);
+              }
+            
+              // Call the countdown function
+              countdown();
+            </script>
+            <!-- End Countdown -->
+          </div>
+          <div  class="btn-gs">
+            <div class="btn-get-started scrollto"><a href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></div>
+          </div>
+        </div>
+        <div class="hero-right col-lg-6 order-1 order-lg-2">
+          <img src="assets/img/main-photo/trophy-with-balloons.webp" class="img-fluid animated hero-img" alt="">
+        </div>
+      </div>
+    </div>
+
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container">
+
+        <div class="">
+            <div class="section-title">
+                <p data-aos="fade-up">Prizes</p>
+            </div>
+            <div class="prizes" data-aos="fade-up" data-aos-delay="100">
+                <div class="tba"> <span>To Be Announced</span> </div>
+            </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ====== Rules Section ====== -->
+    <section id="rules" class="rules section-bg">
+        <div class="container">
+            <div class="contest-rules">
+                <div class="section-title">
+                    <p data-aos="fade-up">Rules and Contest Format</p>
+                </div>
+                <ol class="rules-text" data-aos="fade-up">
+                    <li>Have fun!</li>
+                    <li>The contest will last 3 hours.</li>
+                    <li>Each team will use one laptop.</li>
+                    <li>It is allowed to bring any printed material to the contest.</li>
+                    <li>The usage of Internet during the contest is allowed.</li>
+                    <li>However, messaging/chatting over any device is against the rules.</li>
+                    <li>Details on how to submit your solutions will be provided before the contest during a practice session.</li>
+                </ol>
+            </div>
+        </div>
+    </section>
+
+    <!-- ======= F.A.Q Section ======= -->
+    <section id="faq" class="faq">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>F.A.Q</h2>
+          <p>Frequently Asked Questions</p>
+        </div>
+
+        <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Do we need a teammate? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                No, it is not necessary. You can work alone or in groups of two. However, space will be prioritized for people who already have a teammate. When registering, you have the option to have us pair you with a teammate.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Where and when is the event? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                The event will take place on <date>May 4</date> from 10 am to 4 pm at room 1020 in the Teaching and Learning Complex on the UC Davis campus.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What prior knowledge do you need? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                None is necessary! We recommend having basic programming knowledge. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What languages can we use?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Java, C++, C, Python, and much more! See here for more information: <a href="https://codeforces.com/blog/entry/79">https://codeforces.com/blog/entry/79</a>.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">How do we submit problems? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                In the beginning of the event, we will have a 30-minute practice session. During that time, the participants will have an opportunity to gain familiarity with the environment Codeforces that we will use.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What will happen during the contest? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                All details about the contest will be provided during the first 30 minutes of the event.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">What should we bring? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Each team will have to bring one laptop. Please bring a charger. You may bring a notebook, notes, pens, and pencils. We will provide the problems printed out.
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">Will food be provided? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                A meal will be provided during the contest. Before and after the contest there will be snacks and drinks.
+              </p>
+            </div>
+          </li>
+          
+          <li>
+            <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">When is the deadline to RSVP?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Slots for teams will be filled up on a first-come-first-serve basis, so we suggest registering as soon as possible. If the slots are filled up, you will be placed on the waitlist. We will let you know whether your team's spot is secured or if your team is on the waitlist by April 24th.
+              </p>
+            </div>
+          </li>
+
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq9" class="collapsed question">What is an algorithmic puzzle sample?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Alice and Bob play a game. Alice thinks of two positive integers A and B, A &lt;= B, and Bob has to report how many integers between A and B, inclusive, are divisible by 10. Help Bob and write a program that solves this question.
+              </p>
+              <p>
+                  Hese is a solution coded in C++:
+              </p>
+              <pre class="prettyprint"><code class="language-cpp">#include &lt;iostream&gt;
+
+using namespace std;
+
+int main() {
+	int A, B;
+	cin >> A >> B;
+	int ret = B / 10 - (A - 1) / 10;
+	cout << ret << endl;
+	
+	return 0;
+}</code></pre>
+            </div>
+          </li>
+
+        </ul>
+
+      </div>
+    </section><!-- End F.A.Q Section -->
+    
+    <!-- ======= Sponsors Section ======= -->
+
+    <section id="clients" class="clients  section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <p>Sponsors and Partners</p>
+        </div>
+
+        <div class="clients-slider swiper" data-aos="fade-up" data-aos-delay="100">
+          <div class="swiper-wrapper align-items-center">
+              <div class="swiper-slide"><a href="https://www.morganstanley.com/"><img src="assets/img/clients/morgan-stanley.jpg" class="img-fluid" alt=""></a></div>
+              <div class="swiper-slide"><a href="https://www.nsf.gov/"><img src="assets/img/clients/NSF.webp" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://cs.ucdavis.edu/"><img src="assets/img/clients/ucd-cs.png" class="img-fluid" alt=""></a></div>
+            <div class="swiper-slide"><a href="https://codeforces.com/"><img src="assets/img/clients/Codeforces_logo.png" class="img-fluid" alt=""></a></div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+
+      </div>
+    </section><!-- End Clients Section -->
+
+    <!-- ======= Team Section ======= -->
+    <section id="team" class="team">
+      <div class="container">
+
+        <div class="section-title" data-aos="fade-up">
+          <p>Team</p>
+          <!-- <p>Our team is always here to help</p> -->
+        </div>
+
+        <div class="row profiles">
+            
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="400">
+            <div class="member">
+              <img src="assets/img/team/slobodan.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Slobodan Mitrović</h4>
+                  <!-- <span>Chief Executive Officer</span> -->
+                </div>
+                <div class="social">
+                  <a href="https://web.cs.ucdavis.edu/~mitrovic/">@</a>
+                  <!-- <a href=""><i class="bi bi-facebook"></i></a>
+                  <a href=""><i class="bi bi-instagram"></i></a>
+                  <a href=""><i class="bi bi-linkedin"></i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/theodore-pan.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Theodore Pan</h4>
+                  <!-- <span>Product Manager</span> -->
+                </div>
+                <div class="social">
+					<!--<a href="https://cs.ucdavis.edu/directory/gabriella-sanchez-fuerte">@</i></a> -->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Masaki_Takeuchi.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Masaki Takeuchi</h4>
+                  <!-- <span>Product Manager</span> -->
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Noah_Krim.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Noah Krim</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Jason_Feng.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jason Feng</h4>
+                </div>
+                <div class="social">
+                    <a href="https://jasonfeng365.github.io/">@</i></a>
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/nivita_img.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Nivita Reddy</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/raj_image.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Raj Bapat</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!-- <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/reina.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Reina Itakura</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+	<div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Jack.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jack Xiang</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--<div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jack Yiu Lok Xiang</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div> -->
+          
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/Ben.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Wen-Horng Sheu</h4>
+                </div>
+                <div class="social">
+                    <!--<a href="https://cs.ucdavis.edu/directory/gabriella-sanchez-fuerte">@</a>-->
+                </div>
+              </div>
+            </div>
+          </div>
+          
+          <!--<div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Srikkanth Ramachandran</h4>
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+          <!--- <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Cammie Pugh</h4>
+                </div>
+                <div class="social">
+					<a href="https://cs.ucdavis.edu/directory/gabriella-sanchez-fuerte">@</a>
+                </div>
+              </div>
+            </div>
+          </div>
+		  
+		  <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/avatar.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>David Lee</h4>
+                </div>
+                <div class="social">
+					<a href="https://cs.ucdavis.edu/directory/noreen-johnson">@</a>
+                </div>
+              </div>
+            </div>
+          </div> -->
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/dipak.jpg" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Dipak Ghosal</h4>
+                  <!-- <span>Product Manager</span> -->
+                </div>
+                <div class="social">
+					<a href="https://faculty.engineering.ucdavis.edu/ghosal/">@</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="200">
+            <div class="member">
+              <img src="assets/img/team/jenny.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Jenny Verschuur</h4>
+                  <!-- <span>Product Manager</span> -->
+                </div>
+                <div class="social">
+					<a href="https://cs.ucdavis.edu/directory/jenny-verschuur">@</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="300">
+            <div class="member">
+              <img src="assets/img/team/meshell.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Meshell Louderman</h4>
+                </div>
+                <div class="social">
+					<a href="https://cs.ucdavis.edu/directory/meshell-louderman">@</a>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-xl-3 col-lg-4 col-md-6" data-aos="zoom-in" data-aos-delay="100">
+            <div class="member">
+              <img src="assets/img/team/oscar.webp" class="img-fluid img-team" alt="">
+              <div class="member-info">
+                <div class="member-info-content">
+                  <h4>Oscar</h4>
+                  <!-- <span>Product Manager</span> -->
+                </div>
+                <div class="social">
+                </div>
+              </div>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Team Section -->
+
+    <!-- ======= Contact Us Section ======= -->
+    <section id="contact" class="contact section-bg">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <!-- <h2>Contact Us</h2> -->
+          <p>Contact</p>
+        </div>
+
+        <div class="contact-info" stydata-aos="fade-up" data-aos-delay="100">
+            <div class="info">
+                <div class="info-left">
+                    <div class="address">
+                    <i class="bi bi-geo-alt loc-btn" onClick="cpy()"></i>
+                    <script>
+                      function cpy() {
+                        navigator.clipboard.writeText("Rm 1020, 482 Hutchison Dr, Davis, CA 95616");
+                        alert("Copied address!");
+                      }
+                    </script>
+                    <h4>Location:</h4>
+                    <p>Rm 1020, 482 Hutchison Dr, Davis, CA 95616</p>
+                    </div>
+
+<!--
+                    <div class="email">
+                    <i class="bi bi-envelope"></i>
+                    <h4>Email:</h4>
+                    <p>info@example.com</p>
+                    </div>
+-->
+                    <div class="phone">
+                    <i class="bi bi-phone"></i>
+                    <h4>Discord:</h4>
+                    <p><a href="https://discord.gg/fWx7Pd6XTe">https://discord.gg/fWx7Pd6XTe</a></p>
+                    </div>
+                </div>
+
+                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3120.7838453960503!2d-121.75640698541426!3d38.53875057561085!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x80852947b54cdc97%3A0xacf0f9e560cca60f!2sTeaching%20%26%20Learning%20Complex!5e0!3m2!1sen!2sus!4v1678566225785!5m2!1sen!2sus" width="100%" height="290" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+        </div>
+
+          <!-- <div class="col-lg-7 mt-5 mt-lg-0 d-flex align-items-stretch" data-aos="fade-up" data-aos-delay="200">
+            <form action="forms/contact.php" method="post" role="form" class="php-email-form">
+              <div class="row">
+                <div class="form-group col-md-6">
+                  <label for="name">Your Name</label>
+                  <input type="text" name="name" class="form-control" id="name" placeholder="Your Name" required>
+                </div>
+                <div class="form-group col-md-6 mt-3 mt-md-0">
+                  <label for="name">Your Email</label>
+                  <input type="email" class="form-control" name="email" id="email" placeholder="Your Email" required>
+                </div>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Subject</label>
+                <input type="text" class="form-control" name="subject" id="subject" placeholder="Subject" required>
+              </div>
+              <div class="form-group mt-3">
+                <label for="name">Message</label>
+                <textarea class="form-control" name="message" rows="10" required></textarea>
+              </div>
+              <div class="my-3">
+                <div class="loading">Loading</div>
+                <div class="error-message"></div>
+                <div class="sent-message">Your message has been sent. Thank you!</div>
+              </div>
+              <div class="text-center"><button type="submit">Send Message</button></div>
+            </form>
+          </div> -->
+      </div>
+    </section><!-- End Contact Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <!-- <footer id="footer">
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+        <br><a href='https://pngtree.com/freepng/gold-medal-golden-medal-red-ribbon-clip-art_6000905.html'>Gold png from pngtree.com</a>
+		<br/><a href="https://www.kindpng.com">Balloons from kindpng.com</a> -->
+<!-- End Contact Us Section -->
+
+  <!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+    <div class="container py-4">
+      <div class="copyright">
+        &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
+        <br><a href='https://pngtree.com/freepng/gold-medal-golden-medal-red-ribbon-clip-art_6000905.html'>Gold png from pngtree.com/</a>
+        <br/><a href="https://www.kindpng.com">Balloons from kindpng.com</a>
+        <br><a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Background by John Fowler</a>
+      </div>
+      <div class="credits">
+        <!-- All the links in the footer should remain intact. -->
+        <!-- You can delete the links only if you purchased the pro version. -->
+        <!-- Licensing information: https://bootstrapmade.com/license/ -->
+        <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/ -->
+        Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <a href="#" class="back-to-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="assets/js/main.js"></script>
+  
+  <script>prettyPrint();</script>
+
+</body>
+
+</html>
