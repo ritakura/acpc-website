@@ -1093,6 +1093,15 @@ RULES
   padding: 60px 0;
 }
 
+.faq a {
+  color: #666666;
+  transition: color .5s;
+}
+
+.faq a:hover{
+  color: #fcba03;
+}
+
 .faq-list {
   padding-top: 20px;
   border-radius: 15px;;
