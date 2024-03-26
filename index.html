@@ -56,11 +56,13 @@
       <nav id="navbar" class="navbar">
         <ul>
           <li><a class="nav-link scrollto active" href="#hero">Home</a></li>
-          <li><a class="nav-link scrollto" href="#about">Prizes</a></li>
+          <li><a class="nav-link scrollto active" href="#about">About</a></li>
+          <li><a class="nav-link scrollto" href="#prizes">Prizes</a></li>
           <li><a class="nav-link scrollto" href="#rules">Rules</a></li> 
           <li><a class="nav-link scrollto" href="#faq">FAQ</a></li>
           <li><a class="nav-link scrollto" href="#clients">Partners</a></li>
           <li><a class="nav-link scrollto" href="#team">Team</a></li>
+          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
           <!-- past-contests -->
           <li class = "dropdown">
               <a href="#">
@@ -74,8 +76,7 @@
             </ul>
           </li>
           <!-- past-contests end -->
-          <li><a class="nav-link scrollto" href="#contact">Contact</a></li>
-          <li><a class="getstarted scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></li>
+          <li class="top-right-link"><a class="getstarted scrollto" href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Pre-registration</a></li>
         </ul>
         <i class="bi bi-list mobile-nav-toggle"></i>
       </nav><!-- .navbar -->
@@ -154,7 +155,7 @@
             <!-- End Countdown -->
           </div>
           <div  class="btn-gs">
-            <div class="btn-get-started scrollto"><a href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Preregistration</a></div>
+            <div class="btn-get-started scrollto"><a href="https://docs.google.com/forms/d/e/1FAIpQLSegA3FYxhur9gLEYKvoKqBo1MH94RnGO2Achrrn6jLLQXkiBg/viewform">Pre-registration</a></div>
           </div>
         </div>
         <div class="hero-right col-lg-6 order-1 order-lg-2">
@@ -168,55 +169,112 @@
   <main id="main">
 
     <!-- ======= About Section ======= -->
-    <section id="about" class="about">
+    <section id="about" class="about" data-aos="fade-up" data-aos-delay="100">
+      <div class="container">
+        <div class="grid-container">
+          <div class="grid-item">
+              <div class="section-title">
+                <p>About</p>
+            </div>
+            <div class="about-info">
+              <p>
+              The Aggie Competitive Programming Contest is an annual programming contest held at UC Davis. In teams of two, you will be using 
+              algorithms, data structures, math, and brute force to solve our contest problems! We invite you to join us
+              in 2024's edition of ACPC.      
+              </p> 
+            </div>
+          </div>
+          <div class="grid-item">
+            <img src="./assets/img/beautify/Group Photo-105.jpg" width="518" height="346"/>
+          </div>
+        </div>
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Prizes Section ======= -->
+    <section id="prizes" class="prizes section-bg">
       <div class="container">
 
         <div class="">
             <div class="section-title">
                 <p data-aos="fade-up">Prizes</p>
             </div>
-            <div class="prizes" data-aos="fade-up" data-aos-delay="100">
+            <div class="prize" data-aos="fade-up" data-aos-delay="100">
                 <div class="tba"> <span>To Be Announced</span> </div>
             </div>
         </div>
 
       </div>
-    </section><!-- End About Section -->
+    </section><!-- End Prizes Section -->
 
     <!-- ====== Rules Section ====== -->
-    <section id="rules" class="rules section-bg">
+    <section id="rules" class="rules section">
         <div class="container">
             <div class="contest-rules">
                 <div class="section-title">
-                    <p data-aos="fade-up">Rules and Contest Format</p>
+                    <p data-aos="fade-up">Contest Rules</p>
                 </div>
-                <ol class="rules-text" data-aos="fade-up">
-                    <li>Have fun!</li>
-                    <li>The contest will last 3 hours.</li>
-                    <li>Each team will use one laptop.</li>
-                    <li>It is allowed to bring any printed material to the contest.</li>
-                    <li>The usage of Internet during the contest is allowed.</li>
-                    <li>However, messaging/chatting over any device is against the rules.</li>
-                    <li>Details on how to submit your solutions will be provided before the contest during a practice session.</li>
-                </ol>
+                <div class="rules-text" data-aos="fade-up">
+                  <div class="grid-item">
+                    <h2>1</h2>
+                    <p>The contest will last 3 hours exactly. You may only submit solutions during this time.</p>
+                  </div>
+
+                  <div class="grid-item">
+                    <h2>2</h2>
+                    <p>Each team can only use one computer to write/submit code. There is no restriction on writing
+                      ideas/code on paper.  
+                    </p>
+                  </div>
+                  <div class="grid-item">
+                    <h2>3</h2>
+                    <p>You may not communicate with anyone outside of your team during the contest about the contest materials.</p>
+                  </div>
+
+                  <div class="grid-item">
+                    <h2>4</h2>
+                    <p>You may use the Internet long as the content you access
+                      was published before the start of the contest.
+                    </p>
+                  </div>
+
+                  <div class="grid-item">
+                    <h2>5</h2>
+                    <p>You may not use any generative AI (e.g. ChatGPT) to help write your code.</p>
+                  </div>
+
+                  <div class="grid-item">
+                    <h2>6</h2>
+                    <p>You may bring any amount of notes/printed material to use in the contest.</p>
+                  </div>
+                </div>
             </div>
         </div>
     </section>
 
     <!-- ======= F.A.Q Section ======= -->
-    <section id="faq" class="faq">
+    <section id="faq" class="faq section-bg">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
-          <h2>F.A.Q</h2>
           <p>Frequently Asked Questions</p>
         </div>
 
         <ul class="faq-list" data-aos="fade-up" data-aos-delay="100">
 
           <li>
-            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Do we need a teammate? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq1">Do I need to be a UC Davis student to participate? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
             <div id="faq1" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                No, we invite people from all backgrounds to participate in ACPC! In the past we have had students from other universities
+                and even high schools join us. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" class="collapsed question" href="#faq2">Do I need a teammate? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
               <p>
                 No, it is not necessary. You can work alone or in groups of two. However, space will be prioritized for people who already have a teammate. When registering, you have the option to have us pair you with a teammate.
               </p>
@@ -224,8 +282,8 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq2" class="collapsed question">Where and when is the event? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq2" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">Where and when is the event? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
               <p>
                 The event will take place on <date>May 4</date> from 10 am to 4 pm at room 1020 in the Teaching and Learning Complex on the UC Davis campus.
               </p>
@@ -233,17 +291,27 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq3" class="collapsed question">What prior knowledge do you need? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq3" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">Does it cost money to participate? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
               <p>
-                None is necessary! We recommend having basic programming knowledge. 
+                No, participating is completely free! However, you will need to make your own way to the competition site. 
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq4" class="collapsed question">What languages can we use?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq4" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">What prior knowledge should I have? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+              <p>
+                Having a strong foundation in high school math and having basic programming skils(loops, conditionals, arrays) is recommended. A good portion of the problems are solvable without 
+                needing advanced data structures/algorithms. 
+              </p>
+            </div>
+          </li>
+
+          <li>
+            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What languages can we use?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Java, C++, C, Python, and much more! See here for more information: <a href="https://codeforces.com/blog/entry/79">https://codeforces.com/blog/entry/79</a>.
               </p>
@@ -251,17 +319,19 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq5" class="collapsed question">How do we submit problems? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq5" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">How do we submit problems? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq7" class="collapse" data-bs-parent=".faq-list">
               <p>
-                In the beginning of the event, we will have a 30-minute practice session. During that time, the participants will have an opportunity to gain familiarity with the environment Codeforces that we will use.
+                We will be using the <a href="https://codeforces.com">Codeforces</a> website. 
+                At the beginning of the event, we will host a 30-minute practice session
+                which will allow participants to familiarize themselves with the environment. 
               </p>
             </div>
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq6" class="collapsed question">What will happen during the contest? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq6" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">What is the format of the contest? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq8" class="collapse" data-bs-parent=".faq-list">
               <p>
                 All details about the contest will be provided during the first 30 minutes of the event.
               </p>
@@ -269,8 +339,8 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq7" class="collapsed question">What should we bring? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq7" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq9" class="collapsed question">What should we bring? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq9" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Each team will have to bring one laptop. Please bring a charger. You may bring a notebook, notes, pens, and pencils. We will provide the problems printed out.
               </p>
@@ -278,8 +348,8 @@
           </li>
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq8" class="collapsed question">Will food be provided? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq8" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">Will food be provided? <i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq10" class="collapse" data-bs-parent=".faq-list">
               <p>
                 A meal will be provided during the contest. Before and after the contest there will be snacks and drinks.
               </p>
@@ -287,8 +357,8 @@
           </li>
           
           <li>
-            <div data-bs-toggle="collapse" href="#faq10" class="collapsed question">When is the deadline to RSVP?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq10" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq11" class="collapsed question">When is the deadline to RSVP?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq11" class="collapse" data-bs-parent=".faq-list">
               <p>
                 Slots for teams will be filled up on a first-come-first-serve basis, so we suggest registering as soon as possible. If the slots are filled up, you will be placed on the waitlist. We will let you know whether your team's spot is secured or if your team is on the waitlist by April 24th.
               </p>
@@ -297,10 +367,11 @@
 
 
           <li>
-            <div data-bs-toggle="collapse" href="#faq9" class="collapsed question">What is an algorithmic puzzle sample?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
-            <div id="faq9" class="collapse" data-bs-parent=".faq-list">
+            <div data-bs-toggle="collapse" href="#faq12" class="collapsed question">What kind of code will we be writing in the contest?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+            <div id="faq12" class="collapse" data-bs-parent=".faq-list">
               <p>
-                Alice and Bob play a game. Alice thinks of two positive integers A and B, A &lt;= B, and Bob has to report how many integers between A and B, inclusive, are divisible by 10. Help Bob and write a program that solves this question.
+                Alice and Bob play a game. Alice thinks of two positive integers A and B where A is less than or equal to B. Bob has to report how many integers between A and B, inclusive, are divisible by 10. 
+                Help Bob and write a program that solves this question.
               </p>
               <p>
                   Hese is a solution coded in C++:
@@ -320,6 +391,18 @@ int main() {
             </div>
           </li>
 
+        <li>
+          <div data-bs-toggle="collapse" href="#faq13" class="collapsed question">I am new to competitive programming. How can I practice?<i class="bi bi-chevron-down icon-show"></i><i class="bi bi-chevron-up icon-close"></i></div>
+          <div id="faq13" class="collapse" data-bs-parent=".faq-list">
+            <p>
+              We recommend reading 
+              <a href="https://link.springer.com/content/pdf/10.1007/978-3-030-39357-1.pdf">Guide to Competitive Programming</a>
+              and solving problems on <a href="https://cses.fi/problemset/">CSES</a>, as they cover many classical algorithms.
+              You can also setup a <a href="https://codeforces.com">Codeforces</a> account in advance and practice solving some of the problems there. 
+            </p>
+          </div>
+        </li>
+
         </ul>
 
       </div>
@@ -327,7 +410,7 @@ int main() {
     
     <!-- ======= Sponsors Section ======= -->
 
-    <section id="clients" class="clients  section-bg">
+    <section id="clients" class="clients  section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -348,7 +431,7 @@ int main() {
     </section><!-- End Clients Section -->
 
     <!-- ======= Team Section ======= -->
-    <section id="team" class="team">
+    <section id="team" class="team section-bg">
       <div class="container">
 
         <div class="section-title" data-aos="fade-up">
@@ -618,7 +701,7 @@ int main() {
     </section><!-- End Team Section -->
 
     <!-- ======= Contact Us Section ======= -->
-    <section id="contact" class="contact section-bg">
+    <section id="contact" class="contact section">
       <div class="container" data-aos="fade-up">
 
         <div class="section-title">
@@ -710,7 +793,7 @@ int main() {
         &copy; Copyright <strong><span>Ninestars</span></strong>. All Rights Reserved
         <br><a href='https://pngtree.com/freepng/gold-medal-golden-medal-red-ribbon-clip-art_6000905.html'>Gold png from pngtree.com/</a>
         <br/><a href="https://www.kindpng.com">Balloons from kindpng.com</a>
-        <br><a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Background by John Fowler</a>
+        <!-- <br><a href="https://unsplash.com/@wildhoney?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Background by John Fowler</a> -->
       </div>
       <div class="credits">
         <!-- All the links in the footer should remain intact. -->
