@@ -754,9 +754,11 @@ section {
 }
 
 .about img {
+  width: auto;
+  height: auto;
   max-width: 100%;
-  width: 40vw;
-  aspect-ratio: 52/35;
+  max-height: 100%;
+  
 }
 
 /* .about p {
@@ -903,9 +905,10 @@ section {
 
 @media (max-width: 767px) {
 
-  .about .about-img img{
+  /* .about .about-img img{
     width: 100%;
-  }
+
+  } */
 
   .desktop{
     visibility: collapse;
