@@ -323,7 +323,7 @@ h6,
   color: black;
 }
 
-@media (max-width: 991px) {
+@media (max-width: 1200px) {
   .mobile-nav-toggle {
     display: block;
   }
@@ -367,7 +367,7 @@ h6,
 .navbar-mobile a:focus {
   padding: 10px 20px;
   font-size: 15px;
-  color: #7a7960;
+  color: #f7f7f7;
 }
 
 .navbar-mobile a:hover,
@@ -635,7 +635,7 @@ section {
 
 .section-title {
   text-align: center;
-  padding-bottom: 30px;
+  padding-bottom: 10px;
 }
 
 .section-title h2 {
@@ -753,6 +753,12 @@ section {
   font-size: 20pt;
 }
 
+.about img {
+  max-width: 100%;
+  width: 40vw;
+  height: calc(40*35/5)vw;
+}
+
 /* .about p {
   font-size: 15px;
   color: #5a6570;
@@ -764,12 +770,16 @@ section {
   justify-content: center;
 }
 
-.prize-info {
+.desktop .prize-info{
   background-color: white;
   display: flex;
   flex-direction: column;
   padding: 50px 10%;
   margin: 0 10%;
+}
+
+.prize-info {
+  width: 100%;
 }
 
 .prize-info span {
@@ -807,6 +817,41 @@ section {
   display: grid;
   grid-template-columns: 50% 50%;
   text-align: center;
+}
+
+.desktop{
+  align-items: center;
+  visibility: visible;
+  display: flex;
+}
+
+.phone {
+  visibility: collapse;
+  display: none;
+}
+
+.phone .about-info {
+  text-align: justify;
+}
+
+.phone ul {
+  list-style-type: none;
+  text-align: center;
+  margin: 0 0;
+  padding: 0 0;
+}
+
+.phone .prize-info {
+  background-color: white;
+  display: flex;
+  flex-direction: column;
+  padding: 50px 10%;
+  margin: 0 0;
+}
+
+.phone .prize-info a {
+  margin-top: 10px;
+  margin-bottom: 50px;
 }
 
 .tba {
@@ -851,14 +896,25 @@ section {
 }
 
 @media (max-width: 991px) {
-  .about .about-img img {
-    max-width: 70%;
+  .about-info {
+    font-size: 20px;
   }
 }
 
 @media (max-width: 767px) {
-  .about .about-img img {
-    max-width: 90%;
+
+  .about .about-img img{
+    width: 100%;
+  }
+
+  .desktop{
+    visibility: collapse;
+    display: none;
+  }
+
+  .phone{
+    visibility: visible;
+    display: flex;
   }
 }
 
@@ -1145,6 +1201,8 @@ RULES
 
 .faq-list {
   padding-top: 20px;
+  padding-left: 20px;
+  padding-right: 20px;
   border-radius: 15px;;
   list-style: none;
   background-color: rgba(255, 255, 255, 0.25);
@@ -1228,9 +1286,10 @@ RULES
 }
 
 .team .member {
+  width: fit-content;
+  margin: auto;
   text-align: center;
   margin-bottom: 20px;
-  background: #403f34;
   position: relative;
   overflow: hidden;
 }
@@ -1243,6 +1302,7 @@ RULES
   left: 0;
   right: 0;
   transition: bottom 0.2s;
+  margin: auto;
 }
 
 .team .member .member-info-content {
@@ -1251,6 +1311,8 @@ RULES
   right: 0;
   bottom: 0;
   transition: bottom 0.4s;
+  margin-left: 0;
+  margin-right: 0;
 }
 
 .team .member .member-info-content h4 {
@@ -1312,6 +1374,13 @@ RULES
 .team .member:hover .member-info-content {
   bottom: 8%;
   transition: bottom 0.4s;
+}
+
+
+
+.col-xl-3.col-lg-4.col-md-6 {
+  display: block;
+  text-align: center;
 }
 
 .team .member:hover .social {
