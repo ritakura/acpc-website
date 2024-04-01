@@ -756,7 +756,7 @@ section {
 .about img {
   max-width: 100%;
   width: 40vw;
-  height: calc(40*35/5)vw;
+  aspect-ratio: 52/35;
 }
 
 /* .about p {
