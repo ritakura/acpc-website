@@ -476,6 +476,7 @@ h6,
   display: flex;
   align-items: center;
   justify-content: center;
+  flex-direction: row;
 }
 
 #hero .btn-get-started {
@@ -539,6 +540,11 @@ h6,
 .hero-img {
     max-width: 60%;
     margin-left: 1%;
+}
+
+.discord-icon {
+  height: 40px;
+  margin-left: 10%;
 }
 
 @media (max-width: 991px) {
