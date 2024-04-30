@@ -94,7 +94,7 @@
           <h2 id="event-description">The perfect event for students to show off and test their problem-solving skills through programming. Snacks, food, and prizes included!</h2>          
           <br/>
           <div class="countdown-wrapper">
-            <h3 class="event-time"> May 4, 2024 <span class="event-time"></span></h3>
+            <h3 class="event-time">May 4, 2024 <br>10am @ TLC 1020 <span class="event-time"></span></h3>
             <div>&emsp;</div>
             <!-- Countdown -->
             <div id="countdown">
@@ -114,44 +114,8 @@
                   <div class="countdown-item" id="seconds">00</div>
               </div>
             </div>
-    
-            <script>
-              function countdown() {
-                // Set the date you're counting down to
-                var countDownDate = new Date("May 4, 2024 10:00:00").getTime();
-            
-                // Update the countdown every second
-                var x = setInterval(function() {
-            
-                  // Get the current date and time
-                  var now = new Date().getTime();
-            
-                  // Calculate the time remaining
-                  var distance = countDownDate - now;
-            
-                  // Calculate days, hours, minutes and seconds
-                  var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-                  var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-                  var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-                  var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-            
-                  // Update the HTML elements with the countdown values
-                  document.getElementById("days").innerHTML = String(days).padStart(2, "0");
-                  document.getElementById("hours").innerHTML = String(hours).padStart(2, "0");
-                  document.getElementById("minutes").innerHTML = String(minutes).padStart(2, "0");
-                  document.getElementById("seconds").innerHTML = String(seconds).padStart(2, "0");
-            
-                  // If the countdown is over, display a message
-                  if (distance < 0) {
-                    clearInterval(x);
-                    document.getElementById("countdown").innerHTML = "Countdown is over!";
-                  }
-                }, 1000);
-              }
-            
-              // Call the countdown function
-              countdown();
-            </script>
+
+            <script src="assets/js/countdown.js"></script>
             <!-- End Countdown -->
           </div>
           <div  class="btn-gs">
@@ -505,7 +469,7 @@
                 Help Bob and write a program that solves this question.
               </p>
               <p>
-                  Hese is a solution coded in C++:
+                  Here is a solution coded in C++:
               </p>
               <pre class="prettyprint"><code class="language-cpp">#include &lt;iostream&gt;
 
