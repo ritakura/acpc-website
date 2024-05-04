@@ -6,17 +6,65 @@
 * License: https://bootstrapmade.com/license/
 */
 
+html {
+  font-size: 100%;
+}
+
 :root {
   --yellow: #fcba03;
-  --green: #5fc262;
   --blue: rgba(66, 100, 250, 1);
 
-  /* Hide scrollbar */
+  /* Hide Scrollbar */
   scrollbar-width: none; /* Firefox */
   -ms-overflow-style: none; /* IE 10+ */
 }
 ::-webkit-scrollbar {
   display: none; /* Hide Scrollbar - WebKit (Chrome) */
+}
+
+/*--------------------------------------------------------------
+# Interactor
+--------------------------------------------------------------*/
+.error-message{
+  color: red;
+}
+#interaction {
+  margin-top: 5%vh;
+  margin-left: 2%;
+  align-items: center;
+  justify-content: center;
+}
+#interaction .row::after {
+  clear: both;
+  display: table;
+}
+#interaction .column {
+  width: 50%;
+}
+#interaction .textbox {
+  min-width: 400px;
+  width: 80%;
+  align-self: center;
+  min-height: 6em;
+  font-family: monospace, monospace;
+}
+#interaction span {
+  display: block;
+}
+#interaction .output {
+  font-family: monospace, monospace;
+}
+#interaction .child {
+  margin-bottom: 5px;
+}
+@media screen and (max-width: 850px) {
+  #interaction .column {
+    width: 100%;
+  }
+  #interaction .textbox {
+    min-width: 300px;
+    width: 95%;
+  }
 }
 
 /*--------------------------------------------------------------
@@ -109,7 +157,7 @@ h6,
 }
 
 .back-to-top:hover {
-  background: var(--green);
+  background: var(--blue);
   color: black;
 }
 
