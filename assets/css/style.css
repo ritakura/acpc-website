@@ -540,6 +540,11 @@ h6,
   flex-direction: row;
 }
 
+.tips-and-tricks {
+  color: rgb(255, 210, 20);
+  font-size: 48px;
+}
+
 #hero .btn-get-started {
   font-family: "Raleway", sans-serif;
   font-weight: 500;
