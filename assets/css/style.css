@@ -536,7 +536,7 @@ h6,
 .btn-gs {
   display: flex;
   align-items: center;
-  justify-content: center;
+  justify-content: left;
   flex-direction: row;
 }
 
