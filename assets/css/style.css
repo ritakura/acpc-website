@@ -183,8 +183,8 @@ h6,
   transition: all 0.5s;
   z-index: 997;
   transition: all 0.5s;
-  background: black;
-  box-shadow: 0px 2px 15px rgba(0, 0, 0, 0.1);
+  background: #222222;
+  box-shadow: 0px 5px 15px rgba(0, 0, 0, .5);
 }
 
 #header .logo {
@@ -199,12 +199,12 @@ h6,
   font-weight: 400;
   letter-spacing: 2px;
   font-family: 'Monoton', sans-serif;
-  color: rgb(255, 210, 20);
+  color: #FFC700;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: rgb(255, 208, 0);
+  color: #FFC700;
   text-decoration: none;
 }
 
@@ -212,7 +212,7 @@ h6,
   padding: 0;
   max-height: 40px;
   margin-right: 25%;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 #main {
@@ -493,7 +493,7 @@ h6,
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-weight: 900;
-    border-bottom: #ffe600;
+    border-bottom:#FFC700;
     border-width: 2px;
     border-bottom-style: solid;
 }
@@ -504,7 +504,7 @@ h6,
 #hero {
   width: 100%;
   height: 100vh;
-  background: url('../img/beautify/pexels-photo-3214110.jpeg');
+  background: url('../img/beautify/background.webp');
   background-color: rgba(255, 255, 255, 0.25);
   margin: 72px 0 -72px 0;
 }
@@ -514,7 +514,7 @@ h6,
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  color: #f6f6f6;
+  color: #FFC700;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   padding: 10px 0;
@@ -542,7 +542,7 @@ h6,
 
 .tips-and-tricks {
   color: rgb(255, 210, 20);
-  font-size: 48px;
+  font-size: 32px;
 }
 
 #hero .btn-get-started {
@@ -556,14 +556,14 @@ h6,
   transition: 0.5s;
   margin-top: 30px;
   color: black;
-  background: #696863;
+  background: white;
     align-items: center;
     width: fit-content;
 
 }
 
 #hero .btn-get-started:hover {
-  background: #a09c86;
+  background: #DDDDDD;
 }
 
 #hero .animated {
@@ -579,11 +579,12 @@ h6,
 
 #countdown {
   display: flex;
-  font-family: "Nabla", system-ui;
+  font-family: "Raleway", sans-serif;
   flex-direction: row;
   justify-content: flex-start;
   font-size: 50px;
-  color: black;
+  color: #FFC700;
+  font-weight: bold;
 }
 
 .countdown-group {
@@ -611,6 +612,8 @@ h6,
 .discord-icon {
   height: 40px;
   margin-left: 10%;
+  margin-bottom: 7%;
+  margin-top: 5%;
 }
 
 @media (max-width: 991px) {
@@ -1824,4 +1827,11 @@ RULES
     text-align-last: center;
     padding: 3px 0;
   }
+}
+
+
+.blackHighlight {
+	background: rgba(0, 0, 0, 0.6);
+	border-radius: 40px;
+	padding: 20px;
 }
