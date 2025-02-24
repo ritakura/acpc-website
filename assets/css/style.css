@@ -199,12 +199,12 @@ h6,
   font-weight: 400;
   letter-spacing: 2px;
   font-family: 'Monoton', sans-serif;
-  color: rgb(255, 210, 20);
+  color: #FFC700;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: rgb(255, 208, 0);
+  color: #FFC700;
   text-decoration: none;
 }
 
@@ -212,7 +212,7 @@ h6,
   padding: 0;
   max-height: 40px;
   margin-right: 25%;
-  border-radius: 15px;
+  /* border-radius: 15px; */
 }
 
 #main {
@@ -493,7 +493,7 @@ h6,
     font-family: 'Open Sans', sans-serif;
     color: #000000;
     font-weight: 900;
-    border-bottom: #ffe600;
+    border-bottom:#FFC700;
     border-width: 2px;
     border-bottom-style: solid;
 }
@@ -514,7 +514,7 @@ h6,
   font-size: 48px;
   font-weight: 700;
   line-height: 60px;
-  color: #ffe261;
+  color: #FFC700;
   font-family: 'Open Sans', sans-serif;
   font-weight: 900;
   padding: 10px 0;
@@ -583,7 +583,7 @@ h6,
   flex-direction: row;
   justify-content: flex-start;
   font-size: 50px;
-  color: #ffe261;
+  color: #FFC700;
   font-weight: bold;
 }
 
@@ -1832,6 +1832,6 @@ RULES
 
 .blackHighlight {
 	background: rgba(0, 0, 0, 0.6);
-	border-radius: 10px;
+	border-radius: 40px;
 	padding: 20px;
 }
