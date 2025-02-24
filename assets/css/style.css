@@ -502,8 +502,7 @@ h6,
 # Hero Section
 --------------------------------------------------------------*/
 #hero {
-  width: 100%;
-  height: 100vh;
+	background-size: cover;
   background: url('../img/beautify/background.webp');
   background-color: rgba(255, 255, 255, 0.25);
   margin: 72px 0 -72px 0;
