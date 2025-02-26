@@ -26,6 +26,8 @@
   <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
   <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
 
+  <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+
   <!-- Template Main CSS File -->
   <link href="assets/css/style.css" rel="stylesheet">
   
@@ -174,6 +176,12 @@
             <div class="discord-icon">
               <a href="https://discord.gg/fWx7Pd6XTe"><img src="assets/img/icons/discord_white.png"></a>
             </div>
+
+			<h2 class="spotsLeft text-center" id="seatsRemaining">
+				 {{seatsRemaining}}
+            </h2>
+
+
           </div>
         </div>
         <div class="hero-right col-lg-6 order-1 order-lg-2">
@@ -996,3 +1004,4 @@
 </body>
 
 </html>
+<script src="assets/js/seatsRemaining.js"></script>
