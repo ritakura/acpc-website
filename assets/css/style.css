@@ -503,7 +503,7 @@ h6,
 --------------------------------------------------------------*/
 #hero {
 	background-size: cover;
-  background: url('../img/beautify/background.webp');
+  background: url('https://raw.githubusercontent.com/ritakura/acpc-website/refs/heads/main/assets/img/beautify/background.webp');
   background-color: rgba(255, 255, 255, 0.25);
   margin: 72px 0 -72px 0;
 }
