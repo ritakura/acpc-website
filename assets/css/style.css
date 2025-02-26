@@ -558,7 +558,6 @@ h6,
   background: white;
     align-items: center;
     width: fit-content;
-
 }
 
 #hero .btn-get-started:hover {
@@ -1833,4 +1832,19 @@ RULES
 	background: rgba(0, 0, 0, 0.6);
 	border-radius: 40px;
 	padding: 20px;
+}
+
+#hero .spotsLeft {
+	font-family: "Raleway", sans-serif;
+	font-weight: 500;
+	font-size: 32px;
+	padding: 8px 28px;
+	border-radius: 3px;
+	transition: 0.5s;
+	margin-top: 30px;
+	color: white;
+	align-items: center;
+	width: fit-content;
+
+	text-shadow: 1px 0px .3em #fcba03, -1px -0px .3em #fcba03, 0 0 0.9em #fcba03;
 }
