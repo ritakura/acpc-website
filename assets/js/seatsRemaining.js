@@ -7,7 +7,7 @@ let vue = new Vue({
 		onePersonTeams:0,
 		twoPersonTeams:0,
 
-		capacity:300,
+		capacity:200,
 
 		seatsRemaining:"",
 	},
