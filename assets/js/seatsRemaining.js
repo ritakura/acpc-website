@@ -1,7 +1,7 @@
 let vue = new Vue({
 	el: '#seatsRemaining',
 	data: {
-		endpoint:"https://immortal-hot-cat.ngrok-free.app/api/contests/53807620/signups/",
+		endpoint:"https://canis.jasonfeng365.top/api/contests/53807620/signups/",
 
 		registered:0,
 		onePersonTeams:0,
