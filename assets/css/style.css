@@ -119,7 +119,7 @@ a {
 }
 
 a:hover {
-  color: #fcba03;
+  color: #2CBAA8;
   text-decoration: none;
 }
 
@@ -199,12 +199,12 @@ h6,
   font-weight: 400;
   letter-spacing: 2px;
   font-family: 'Monoton', sans-serif;
-  color: #FFC700;
+  color: #2CBAA8;
 }
 
 #header .logo h1 a,
 #header .logo h1 a:hover {
-  color: #FFC700;
+  color: #2CBAA8;
   text-decoration: none;
 }
 
@@ -264,7 +264,7 @@ h6,
 .navbar .active,
 .navbar .active:focus,
 .navbar li:hover>a {
-  color: rgb(255, 208, 0);
+  color: #2CBAA8;
 }
 
 .navbar .top-right-link:hover>a {
@@ -434,7 +434,7 @@ h6,
 .navbar-mobile a:hover,
 .navbar-mobile .active,
 .navbar-mobile li:hover>a {
-  color: rgb(255, 208, 0);
+  color: #2CBAA8;
 }
 
 .navbar-mobile .getstarted,
@@ -469,18 +469,20 @@ h6,
 .navbar-mobile .dropdown ul a:hover,
 .navbar-mobile .dropdown ul .active:hover,
 .navbar-mobile .dropdown ul li:hover>a {
-  color: rgb(255, 208, 0);
+  color: #2CBAA8
 }
 
 .navbar-mobile .dropdown>.dropdown-active {
   display: block;
 }
 
-.event-name {
-    display: flex;
-    align-items: center;
-    justify-content: center;
+@font-face {
+  font-family: 'Minecraft'; /* Choose a name for your font */
+  src: url('../font/F77MinecraftRegular-0VYv.ttf');
+  font-weight: normal; /* Define the weight (optional) */
+  font-style: normal; /* Define the style (optional) */
 }
+
 
 /* event description (home) */
 #event-description{
@@ -503,26 +505,27 @@ h6,
 --------------------------------------------------------------*/
 #hero {
 	background-size: cover;
-  /* background: url('https://raw.githubusercontent.com/ritakura/acpc-website/refs/heads/main/assets/img/beautify/background.webp'); */
+  background-repeat: no-repeat;
+  background-position: center;
+  background-image: url('../img/beautify/sunset2.jpg');
   /* background-color: rgba(255, 255, 255, 0.25); */
-  background-color: rgba(0, 157, 255, 0.25);
+  /* background-color: rgba(0, 157, 255, 0.25); */
   margin: 72px 0 -72px 0;
 }
 
 #hero h1 {
   margin: 0;
-  font-size: 48px;
-  font-weight: 700;
+  font-size: 44px;
   line-height: 60px;
-  color: #FFC700;
-  font-family: 'Open Sans', sans-serif;
-  font-weight: 900;
+  color: white;
+  font-family: 'Minecraft', sans-serif;
   padding: 10px 0;
 }
 
 #hero h2 {
-  color: #f6f6f6;
+  color: #E3D4D1;
   line-height: 30px;
+  font-family: 'Minecraft', sans-serif;
   /* margin: 15px 0 0 0; */
   /* font-size: 24px; */
   padding: 10px 0;
@@ -541,7 +544,8 @@ h6,
 }
 
 .tips-and-tricks {
-  color: rgb(255, 210, 20);
+  font-family: "Minecraft";
+  color: #2CBAA8;
   font-size: 32px;
 }
 
@@ -578,11 +582,11 @@ h6,
 
 #countdown {
   display: flex;
-  font-family: "Raleway", sans-serif;
+    font-family: 'Raleway', sans-serif;
   flex-direction: row;
   justify-content: flex-start;
-  font-size: 50px;
-  color: #FFC700;
+    font-size: 40px;
+  color: #E3D4D1;
   font-weight: bold;
 }
 
@@ -1831,8 +1835,21 @@ RULES
 
 .blackHighlight {
 	background: rgba(0, 0, 0, 0.6);
-	border-radius: 40px;
+	/* border-radius: 40px; */
 	padding: 20px;
+
+	
+  box-shadow:
+    4px 0 black,
+    -4px 0 black,
+    0 -4px black,
+    0 4px black,
+    8px 0 white,
+    -8px 0 white,
+    0 -8px white,
+    0 8px white, 
+    0 0 0 4px white;
+  margin: 2*4px auto;
 }
 
 #hero .spotsLeft {
