@@ -948,6 +948,10 @@ section {
   width: 40%;
 }
 
+.prize-img {
+  object-fit: contain;
+}
+
 .img-medal {
   width: 20%;
 }
