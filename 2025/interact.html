@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Tournament Tester</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/ICPC_UCD.png" rel="icon">
+  <link href="assets/img/ICPC_UCD.png" rel="apple-touch-icon">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Monoton&family=Nabla&family=Open+Sans:wght@500;800&display=swap"
+    rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="assets/css/style.css" rel="stylesheet">
+
+  <!-- Styles for code -->
+  <script src="https://cdn.jsdelivr.net/gh/google/code-prettify@master/loader/run_prettify.js"></script>
+
+  <!-- =======================================================
+  * Template Name: Ninestars
+  * Updated: Mar 10 2023 with Bootstrap v5.2.3
+  * Template URL: https://bootstrapmade.com/ninestars-free-bootstrap-3-theme-for-creative/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top d-flex align-items-center">
+    <div class="container d-flex align-items-center justify-content-between">
+      <div class="logo">
+        <h1 class="text-light"><a href="index.html"><span>ACPC</span></a></h1>
+      </div>
+    </div>
+  </header><!-- End Header -->
+  </header>
+
+  <section id="interaction">
+    <noscript>
+      <h1 style="color: red;">This page requires Javascript</h1>
+    </noscript>
+    <br>
+    <div class="row">
+      <div class="column">
+        <script src="assets/js/interact.js"></script>
+        <div class="child">
+          <h4>Set Expected Ordering:</h4>
+        </div>
+        <textarea class="child textbox" id="expected" placeholder="4 3 1 2" onchange="setExpected()"></textarea>
+        <div class="child error-message" id="expected-error"></div>
+        <br>
+        <div class="child">
+          <h4>Query:</h4>
+        </div>
+        <textarea class="child textbox" id="query" placeholder="3 4 2 1"></textarea>
+        <br>
+        <button class="child" onclick="runQuery()">
+          Query
+        </button>
+        <div class="child error-message" id="query-error"></div>
+      </div>
+      <div class="column">
+        <div class="child">
+          <h4>Output:</h4>
+        </div>
+        <button class="child" onclick="resetOutput()">
+          Reset
+        </button>
+        <div class="child output">
+          <span>Expected:</span>
+          <span id="output-ordering"></span>
+        </div>
+        <ol class="child output" id="output-list"></ol>
+      </div>
+      <script>
+        setEnterListener();
+      </script>
+    </div>
+    <br>
+  </section>
+</body>

@@ -1,13 +1,13 @@
 let vue = new Vue({
 	el: '#seatsRemaining',
 	data: {
-		endpoint:"https://canis.jasonfeng365.top/api/contests/53807620/signups/",
+		endpoint:"https://canis.jasonfeng365.top/api/contests/73993846/signups/",
 
 		registered:0,
 		onePersonTeams:0,
 		twoPersonTeams:0,
 
-		capacity:200,
+		capacity: 200,
 
 		seatsRemaining:"",
 	},
