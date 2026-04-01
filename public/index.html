@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Prizes and Sponsors</title>
+</head>
+<body>
+  <h1>Prizes</h1>
+  <ul id="prizes-list"></ul>
+
+  <h1>Sponsors</h1>
+  <ul id="sponsors-list"></ul>
+
+  <script>
+    // 获取奖品和赞助商数据并显示
+    fetch('/api/prizes-sponsors')
+      .then(response => response.json())
+      .then(data => {
+        const prizesList = document.getElementById('prizes-list');
+        const sponsorsList = document.getElementById('sponsors-list');
+
+        // 显示奖品
+        data.prizes.forEach(prize => {
+          const li = document.createElement('li');
+          li.textContent = `${prize.name}: ${prize.description} (Value: $${prize.value})`;
+          prizesList.appendChild(li);
+        });
+
+        // 显示赞助商
+        data.sponsors.forEach(sponsor => {
+          const li = document.createElement('li');
+          li.innerHTML = `${sponsor.name} <img src="images/${sponsor.logo}" alt="${sponsor.name} logo">`;
+          sponsorsList.appendChild(li);
+        });
+      });
+  </script>
+</body>
+</html>
