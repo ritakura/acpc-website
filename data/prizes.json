@@ -1,0 +1,24 @@
+{
+  "prizes": [
+    {
+      "name": "First Prize",
+      "description": "A brand new laptop",
+      "value": 1500
+    },
+    {
+      "name": "Second Prize",
+      "description": "A tablet",
+      "value": 500
+    }
+  ],
+  "sponsors": [
+    {
+      "name": "Company A",
+      "logo": "company_a_logo.png"
+    },
+    {
+      "name": "Company B",
+      "logo": "company_b_logo.png"
+    }
+  ]
+}
