@@ -1,0 +1,38 @@
+/* Prizes and Sponsors Section Styles */
+#prizes-sponsors, #sponsors {
+  padding: 50px 0;
+  background-color: #f9f9f9;
+}
+
+#prizes-sponsors h2, #sponsors h2 {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 30px;
+}
+
+.prizes-list, .sponsors-list {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.prize-item, .sponsor-item {
+  background-color: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  margin: 10px;
+  flex: 1 1 30%;
+}
+
+.prize-item h3 {
+  font-size: 1.5rem;
+  color: #333;
+}
+
+.sponsor-item img {
+  max-width: 100px;
+  height: auto;
+  margin: 0 auto;
+}
